@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Is it Friday?</title>
+    </head>
+    <body>
+        <div id="container" />
+        <script type="application/javascript">
+            (function() {
+                const container = document.getElementById("container")
+                const isFriday = new Date().getDay() === 5;
+                container.innerText = isFriday ? "Today is Friday" : "Today is not Friday";
+            })();
+        </script>
+    </body>
+</html>
